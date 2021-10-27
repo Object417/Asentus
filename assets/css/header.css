@@ -1,0 +1,29 @@
+#main_header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  border-bottom: 1px solid #ffffff80;
+}
+#main_header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main_header h2 {
+  text-transform: lowercase;
+}
+#main_header h2::first-letter {
+  color: #17bed2;
+}
+nav {
+  display: flex;
+}
+.nav-link {
+  padding: 1rem;
+}
+.nav-link:hover, .nav-link.active {
+  color: #515769;
+  background: #fff;
+}

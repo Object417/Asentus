@@ -1,2 +1,2 @@
 # Asentus
-A Free Mockup for a Small Company
+A Free Website Mockup for a Small Modern Company
