@@ -1,9 +1,14 @@
-main > .container {
-  padding: 0;
+main {
+  color: #a6a7aa;
 }
 main section {
-  margin: 5rem 0;
-  padding: 1rem;
+  padding: 5rem 0;
+}
+main section:nth-child(even) {
+  background: #fafafa;
+}
+main h2 {
+  color: #515769;
 }
 blockquote {
   position: relative;
@@ -18,10 +23,7 @@ blockquote::before {
   font-size: 5rem;
   color: #17bed2;
 }
-blockquote > p, blockquote > cite {
-  margin-left: 3rem;
-}
+blockquote > p,
 blockquote > cite {
-  color: #bbb;
-  font-style: normal;
+  margin-left: 3rem;
 }

@@ -1,30 +1,31 @@
 #welcome_block {
+  display: flex;
+  align-items: center;
   height: 100vh;
-  color: #fff;
-  background: url("../images/welcome-bg.png") no-repeat;
-  background-size: 300%;
-  animation: change-bg infinite 20s;
+  min-height: 400px; /* Change to rem */
+  background: url("../images/welcome1.jpg");
+  background-size: cover;
 }
 #welcome_block > .container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 100%;
 }
 #welcome_block .main-info {
-  width: 600px;
+  width: 600px; /* Change to rem */
+  margin-top: 100px;
 }
-#welcome_block .main-info .description {
+#welcome_block .main-info p {
   margin: 0 0 1.5rem;
+  color: #a6a7aa;
 }
 h1 {
-  margin: 0;
-  font-size: 5rem;
   text-transform: uppercase;
-  color: #fff;
+  line-height: 1;
+  font-size: 5rem;
 }
 
-@keyframes change-bg {
+/*@keyframes change-bg {
   0% {
     background-position-x: 0;
   }
@@ -40,4 +41,4 @@ h1 {
   100% {
     background-position-x: 100%;
   }
-}
+}*/

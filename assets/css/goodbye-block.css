@@ -1,0 +1,75 @@
+#goodbye_block {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  min-height: 600px;
+  background: url("../images/footer1.jpg");
+  background-size: cover;
+}
+#goodbye_block > .container {
+  display: flex;
+}
+#goodbye_block .left-side,
+#goodbye_block .right-side {
+  width: 50%;
+  margin-bottom: 100px;
+}
+#goodbye_block .left-side {
+  display: flex;
+}
+.links-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #a6a7aa;
+}
+.links-list:last-child {
+  margin-left: 5rem;
+}
+.links-list > li {
+  padding: 0.5rem 0;
+}
+.links-list a:hover,
+.links-list a:active,
+.links-list a:focus {
+  color: #fff;
+}
+#contactUs_form {
+  width: 400px;
+}
+#contactUs_form input,
+#contactUs_form textarea {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  border: none;
+  color: #fff;
+  background: #51576980;
+}
+#contactUs_form input:first-child {
+  margin-top: 0.75rem;
+}
+#contactUs_form input::placeholder,
+#contactUs_form textarea::placeholder {
+  color: #a6a7aa;
+}
+textarea {
+  resize: none;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+}
+#contactUs_form button {
+  background: #51576980;
+  color: #a6a7aa;
+}
+#contactUs_form button:hover,
+#contactUs_form button:active,
+#contactUs_form button:focus {
+  background: #17bed2;
+  color: #fff;
+}
+input, button, textarea {
+  outline: none;
+}

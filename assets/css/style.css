@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @import url("normalize.css");
 @import url("common.css");
-@import url("header.css");
+
+@import url("header-footer.css");
+
 @import url("welcome-block.css");
+@import url("goodbye-block.css");
+
 @import url("main-sections.css");
-@import url("footer.css");
