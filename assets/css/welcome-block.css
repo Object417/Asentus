@@ -1,10 +1,7 @@
 #welcome_block {
   display: flex;
   align-items: center;
-  height: 100vh;
-  min-height: 400px; /* Change to rem */
-  background: url("../images/welcome1.jpg");
-  background-size: cover;
+  height: calc(100vh - 100px);
 }
 #welcome_block > .container {
   display: flex;
@@ -12,8 +9,7 @@
   align-items: center;
 }
 #welcome_block .main-info {
-  width: 600px; /* Change to rem */
-  margin-top: 100px;
+  width: 600px;
 }
 #welcome_block .main-info p {
   margin: 0 0 1.5rem;
@@ -24,21 +20,3 @@ h1 {
   line-height: 1;
   font-size: 5rem;
 }
-
-/*@keyframes change-bg {
-  0% {
-    background-position-x: 0;
-  }
-  45% {
-    background-position-x: 0;
-  }
-  50% {
-    background-position-x: 50%;
-  }
-  95% {
-    background-position-x: 50%;
-  }
-  100% {
-    background-position-x: 100%;
-  }
-}*/

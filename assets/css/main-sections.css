@@ -1,14 +1,83 @@
 main {
   color: #a6a7aa;
 }
-main section {
+main > section {
   padding: 5rem 0;
 }
-main section:nth-child(even) {
+main > section:nth-child(even) {
   background: #fafafa;
 }
-main h2 {
+main > section header {
+  width: 50%;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.latest-projects-item {
+  width: 33.33333%;
+  margin-right: 1rem;
+}
+.latest-projects-item:last-child {
+  margin-right: 0;
+}
+.latest-projects-item .title {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.latest-projects-item .title span {
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+.img-container {
+  height: 300px;
+  overflow: hidden;
+}
+.img-container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.img-container img {
+  width: 100%;
+  transition: 0.3s;
+}
+.latest-projects-item .img-container img:hover {
+  opacity: 0.625;
+}
+.latest-projects-item .description {
+  position: relative;
+  height: 100px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+.latest-projects-item .description p {
+  margin: 0;
+}
+.latest-projects-item .description::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;;
+  background: linear-gradient(to bottom, #ffffff00 0%, #fff 100%);
+}
+
+main h2,
+main h3 {
   color: #515769;
+}
+main h2 a:hover,
+main h2 a:active,
+main h2 a:focus,
+main h3 a:hover,
+main h3 a:active,
+main h3 a:focus {
+  color: #a6a7aa;
+  text-decoration: none;
 }
 blockquote {
   position: relative;
@@ -26,4 +95,99 @@ blockquote::before {
 blockquote > p,
 blockquote > cite {
   margin-left: 3rem;
+}
+
+.logo-item {
+  width: 25%;
+  height: 100px;
+  margin-right: 1rem;
+}
+.logo-item:last-child {
+  margin-right: 0;
+}
+.logo-item.twitter {
+  background: url("../icons/twitter_grey.svg") center no-repeat;
+  background-size: contain;
+}
+.logo-item.twitter:hover {
+  background: url("../icons/twitter.svg") center no-repeat;
+  background-size: contain;
+}
+.logo-item.facebook {
+  background: url("../icons/facebook_grey.svg") center no-repeat;
+  background-size: contain;
+}
+.logo-item.facebook:hover {
+  background: url("../icons/facebook.svg") center no-repeat;
+  background-size: contain;
+}
+.logo-item.instagram {
+  background: url("../icons/instagram_grey.svg") center no-repeat;
+  background-size: contain;
+}
+.logo-item.instagram:hover {
+  background: url("../icons/instagram.svg") center no-repeat;
+  background-size: contain;
+}
+.logo-item.youtube {
+  background: url("../icons/youtube_grey.svg") center no-repeat;
+  background-size: contain;
+}
+.logo-item.youtube:hover {
+  background: url("../icons/youtube.svg") center no-repeat;
+  background-size: contain;
+}
+
+.grid-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 300px;
+}
+.grid-item .img-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.grid-item .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  padding: 1rem;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+.grid-item .description h3,
+.grid-item .description p {
+  color: #fff;
+  z-index: 1;
+}
+.grid-item .description::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #51576980;
+  transition: 0.3s;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+.grid-item {
+  position: relative;
+}
+.grid-item:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.grid-item:hover .description,
+.grid-item:hover .description::before {
+  opacity: 1;
 }
