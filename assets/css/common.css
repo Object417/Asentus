@@ -42,13 +42,11 @@ b, strong {
   color: #515769;
   font-weight: bold;
 }
-a, a:link, a:visited {
+a, a:link, a:visited, a:hover, a:active, a:focus {
   outline: none;
   color: inherit;
   text-decoration: none;
-}
-a:hover, a:active, a:focus {
-  text-decoration: underline;
+  background: none;
 }
 cite {
   font-style: normal;
@@ -92,8 +90,8 @@ cite {
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   background: #a6a7aa80;
 }

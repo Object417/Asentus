@@ -98,13 +98,40 @@ blockquote > cite {
 }
 
 .logo-item {
+  position: relative;
   width: 25%;
-  height: 100px;
   margin-right: 1rem;
+  padding-top: 5.58%;
+  background: url("../images/socials/socials-compile.png");
+  background-size: 400% 200%;
 }
 .logo-item:last-child {
   margin-right: 0;
 }
+.logo-item a {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.logo-item.twitter:hover,
+.logo-item.facebook:hover,
+.logo-item.instagram:hover,
+.logo-item.youtube:hover {
+  background-position-y: -100%;
+}
+.logo-item.facebook {
+  background-position-x: -100%;
+}
+.logo-item.instagram {
+  background-position-x: -200%;
+}
+.logo-item.youtube {
+  background-position-x: -300%;
+}
+/*
 .logo-item.twitter {
   background: url("../icons/twitter_grey.svg") center no-repeat;
   background-size: contain;
@@ -137,6 +164,7 @@ blockquote > cite {
   background: url("../icons/youtube.svg") center no-repeat;
   background-size: contain;
 }
+*/
 
 .grid-showcase {
   display: grid;

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Asentus Theme</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/compile.css">
 </head>
 <body>
   
   <header id="main_header">
     <div class="container">
-      <h2>Asentus</h2>
+      <h2><a href="index.html">Asentus</a></h2>
       <nav>
-          <a href="index.html" class="btn nav-link">Home</a>
+          <a href="#main_header" class="btn nav-link">Welcome</a>
           <a href="#about" class="btn nav-link">About</a>
           <a href="#projects" class="btn nav-link">Projects</a>
           <a href="#pricing" class="btn nav-link">Pricing</a>
-          <a href="#contact" class="btn nav-link">Contact</a>
+          <a href="#goodbye_block" class="btn nav-link">Contact</a>
       </nav>
     </div>
   </header>
@@ -32,10 +32,12 @@
   </div>
 
   <div class="fullscreen-slider top">
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
+    <div class="fullscreen-slider-container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
   </div>
 
   <main>
@@ -61,10 +63,10 @@
       <div class="container">
         <h2>Socials</h2>
         <div class="row">
-          <div class="logo-item twitter"></div>
-          <div class="logo-item facebook"></div>
-          <div class="logo-item instagram"></div>
-          <div class="logo-item youtube"></div>
+          <div class="logo-item twitter" data-keepAspectRatio="300:67"><a href=""></a></div>
+          <div class="logo-item facebook" data-keepAspectRatio="300:67"><a href=""></a></div>
+          <div class="logo-item instagram" data-keepAspectRatio="300:67"><a href=""></a></div>
+          <div class="logo-item youtube" data-keepAspectRatio=""><a href=""></a></div>
         </div>
       </div>
     </section>
@@ -199,19 +201,7 @@
         </div>
       </div>
     </section>
-
-    <section id="contact">
-      <div class="container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1904.4253773442642!2d23.77206729144628!3d61.48940065312926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edf4dec98bd7f%3A0x167335509a998049!2sTieto%20Finland%20Oy!5e0!3m2!1sru!2sua!4v1635535701050!5m2!1sru!2sua" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </section>
   </main>
-
-  <div id="totop">
-    <a href="#main_header">
-      <img src="assets/icons/chevron-up.svg" alt="">
-    </a>
-  </div>
 
   <div id="goodbye_block">
     <div class="container">
@@ -259,6 +249,8 @@
       </cite>
     </div>
   </footer>
+
+  <!--<div id="totop"><a href="#main_header"><img src="assets/icons/chevron-up.svg" alt=""></a></div>-->
 
 </body>
 </html>
