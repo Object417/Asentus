@@ -1,0 +1,172 @@
+// Correct size calculation
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+// Smooth scrooling
+html {
+  scroll-behavior: smooth;
+}
+
+// Basic body styles
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 5rem 0;
+  color: $secondary-grey;
+  font: $base-font;
+}
+
+// Heading styles
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: $primary-grey;
+  font: $heading-font;
+}
+h1 {
+  color: $white;
+  font-size: 5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+// Text styles
+p {
+  margin: 1rem 0;
+}
+b, strong {
+  color: $primary-grey;
+  font-weight: bold;
+}
+blockquote {
+  position: relative;
+  margin: 0;
+}
+cite {
+  font-style: normal;
+}
+
+// Links
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// Lists
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &:not([class]) {
+    margin: 1rem 0;
+  }
+  &:not([class]) li::before {
+    content: "\2022";
+    margin-right: 0.5rem;
+    color: $primary-color;
+  }
+}
+ul.links-list {
+  li {
+    padding: 0.5rem 0;
+  }
+  a:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+// Input forms
+button, input, textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit;
+}
+textarea {
+  resize: none;
+}
+button[type] {
+  cursor: pointer;
+}
+
+// Common clases
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+// Flex container
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+// Grid container
+.grid-container {
+  display: grid;
+}
+
+// Buttons
+%btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-primary {
+  @extend %btn;
+  @extend %animated;
+  border-color: $primary-grey;
+  color: $primary-grey;
+
+  &:hover {
+    border-color: $primary-color;
+    color: $white;
+    background-color: $primary-color;
+  }
+}
+.btn-secondary {
+  @extend %btn;
+  @extend %animated;
+  border-color: $white;
+  color: $white;
+
+  &:hover {
+    border-color: $primary-grey;
+    color: $primary-grey;
+    background-color: $white;
+  }
+}
+
+// Images
+.img-preview {
+  background-size: cover;
+  background-position: center;
+}
+
+// Icons
+.icon-container {
+  @extend %animated;
+}
+
+// Animations
+%animated {
+  transition: 0.3s;
+}
+
+// Scrool offset
+.scrool-offset {
+  position: relative;
+  top: -8rem;
+}

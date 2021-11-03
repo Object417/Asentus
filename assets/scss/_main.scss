@@ -1,0 +1,245 @@
+// Common styles
+main {
+  section {
+    padding: 3rem 0;
+
+    &:nth-child(even) {
+      background-color: $secondary-bg-color;
+    }
+  }
+}
+
+// Cards' title
+.item header {
+  margin: 1rem 0;
+
+  a:hover {
+    color: $secondary-grey;
+  }
+  span {
+    color: $secondary-grey;
+    text-transform: uppercase;
+  }
+}
+
+// Cards' description
+.description {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-preview {
+  @extend %animated;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+// Section About Us
+#about {
+
+  .img-preview {
+    background-image: url("../images/about-us.jpg");
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+// Section Meet the Team!
+#team {
+  h2 {
+    margin-bottom: 1rem;
+  }
+  .item {
+    .img-preview:hover ~ .btn-primary {
+      border-color: $primary-color;
+      color: $white;
+      background-color: $primary-color;
+    }
+  }
+  .alice-keys .img-preview {
+    background-image: url("../images/team/alice-keys.jpeg");
+  }
+  .nicolas-millner .img-preview {
+    background-image: url("../images/team/nicolas-millner.jpg");
+  }
+  .scarlet-johanson .img-preview {
+    background-image: url("../images/team/scarlet-johanson.jpg");
+  }
+}
+
+// We Provide
+#provide {
+  h2 {
+    margin-bottom: 1rem;
+  }
+  .item {
+    @extend %animated;
+    padding: 1rem;
+    background-color: $secondary-bg-color;
+
+    &:hover {
+      transform: scale(1.05);
+
+      .icon-container {
+        color: $primary-color;
+      }
+    }
+    h3 {
+      margin: 1rem 0;
+    }
+  }
+}
+
+// Latest Projects
+#projects {
+  .item {
+
+    .img-preview:hover ~ .btn-primary {
+      border-color: $primary-color;
+      color: $white;
+      background-color: $primary-color;
+    }
+  }
+  .triangle-roof .img-preview {
+    background-image: url("../images/projects/project1.jpg");
+  }
+  .colorful-gym .img-preview {
+    background-image: url("../images/projects/project2.jpg");
+  }
+  .green-house .img-preview {
+    background-image: url("../images/projects/project3.webp");
+  }
+}
+
+// Pricing
+#pricing {
+  h2 {
+    margin-bottom: 1rem
+  }
+  .item {
+    @extend %animated;
+    padding: 3rem 2rem;
+    background-color: $white;
+
+    &:hover {
+      .icon-container {
+        color: $primary-color;
+      }
+      .btn-primary {
+        border-color: $primary-color;
+        color: $white;
+        background-color: $primary-color;
+      }
+    }
+    h3 {
+      margin: 1rem 0;
+    }
+    .price {
+      &::before {
+        content: "$";
+        color: $secondary-grey;
+        font-size: 1rem;
+      }
+      &::after {
+        content: "/month";
+        color: $secondary-grey;
+        font-size: 1rem;
+      }
+    }
+    .description::after {
+      background: linear-gradient(to bottom, #ffffff00, $white);
+    }
+  }
+}
+
+// Socials
+#socials {
+  h2 {
+    margin-bottom: 1rem
+  }
+  .img-preview {
+    background-image: url("../images/socials/socials-compile.png");
+    background-size: 400% 200%;
+    background-position-y: 0;
+    transition: 0s;
+
+    &:hover {
+      opacity: 1;
+      background-position-y: -100%;
+    }
+  }
+  .twitter .img-preview {
+    background-position-x: 0;
+  }
+  .facebook .img-preview {
+    background-position-x: -100%;
+  }
+  .instagram .img-preview {
+    background-position-x: -200%;
+  }
+  .youtube .img-preview {
+    background-position-x: -300%;
+  }
+}
+
+// Showcase
+#showcase {
+  .grid-container {
+    .item {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      // cursor: pointer;
+
+      &:hover {
+        &::after {
+          background-color: #51576980;
+        }
+        .img-description {
+          bottom: 1rem;
+          opacity: 1;
+        }
+      }
+      &::after {
+        @extend %animated;
+        content: "";
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+      }
+      &:nth-child(1) {
+        background-image: url("../images/showcase/showcase1.jpg");
+      }
+      &:nth-child(2) {
+        background-image: url("../images/showcase/showcase2.jpg");
+      }
+      &:nth-child(3) {
+        background-image: url("../images/showcase/showcase3.jpg");
+      }
+      &:nth-child(4) {
+        background-image: url("../images/showcase/showcase4.jpg");
+      }
+      &:nth-child(5) {
+        background-image: url("../images/showcase/showcase5.jpg");
+      }
+    }
+  }
+  .img-description {
+    @extend %animated;
+    position: absolute;
+    right: 0; bottom: 0; left: 0;
+    z-index: 1;
+    padding: 0 1rem;
+    color: $white;
+    opacity: 0;
+
+    h3 {
+      color: $white;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

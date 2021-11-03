@@ -1,0 +1,13 @@
+#welcome_block {
+  height: calc(100vh - 5rem);
+  min-height: 25rem;
+  color: $white;
+
+  .container {
+    height: 100%;
+  }
+
+  .content {
+    max-width: 34rem;
+  }
+}

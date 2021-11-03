@@ -1,0 +1,20 @@
+// Import fonts Hind and Roboto
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+// Variables
+@import "variables";
+
+// Handmade Reset and Normalize CSS
+@import "common";
+
+@import "header_footer";
+@import "fullscreen-slider";
+@import "welcome_block";
+@import "goodbye_block";
+@import "main";
+
+// Kepp Aspect Ratio for Images
+@import "keepratio";
+
+// Media queries
+@import "media";

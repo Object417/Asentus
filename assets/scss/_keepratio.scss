@@ -1,0 +1,32 @@
+// Common styles
+[data-keepratio] {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  > * {
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+  }
+}
+
+// Keep Aspect Ratio 1:1
+[data-keepratio="1:1"] {
+  padding-top: 100%;
+}
+
+// Keep Aspect Ratio 4:3
+[data-keepratio="4:3"] {
+  padding-top: 75%;
+}
+
+// Keep Aspect Ratio 2:1
+[data-keepratio="2:1"] {
+  padding-top: 50%;
+}
+
+// Keep Aspect Ratio 300:67
+[data-keepratio="300:67"] {
+  padding-top: 22.333%;
+}

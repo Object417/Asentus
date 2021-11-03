@@ -1,0 +1,53 @@
+#goodbye_block {
+  position: relative;
+  height: calc((100vh - 5rem) - 1px);
+  z-index: 3;
+
+  .container {
+    height: 100%;
+  }
+  h2 {
+    margin-bottom: 1rem;
+  }
+  h2, h3 {
+    color: $white;
+  }
+  .item {
+    &:first-child {
+      display: flex;
+    }
+  }
+  ul.links-list:not(:last-child) {
+    margin-right: 5rem;
+  }
+}
+#contactUs_form {
+  max-width: 34rem;
+
+  input {
+    margin-bottom: 0.5rem;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    color: $white;
+    background-color: #51576980;
+
+    &::placeholder {
+      color: $secondary-grey;
+    }
+  }
+  input, textarea, button {
+    background-color: #51576980;
+  }
+  button[type="submit"] {
+    color: $secondary-grey;
+    border-color: $primary-grey;
+
+    &:hover {
+      color: $white;
+      border-color: $primary-color;
+      background-color: $primary-color;
+    }
+  }
+}
