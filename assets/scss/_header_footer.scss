@@ -1,11 +1,11 @@
 #main_header, #main_footer {
-  height: 5rem;
+  // height: 5rem;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%
+    padding: 1rem 0;
   }
   h2 {
     @extend %animated;
@@ -19,15 +19,14 @@
   }
 }
 #main_header {
+  // @extend %animated;
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 2;
   border-bottom: 1px solid $primary-grey;
-  color: $primary-grey;
-  background: $white;
 }
 
-nav {
+#main_header nav {
   #nav_checkbox {
     display: none;
 
@@ -42,11 +41,16 @@ nav {
   .nav-menu {
     @extend %animated;
     display: flex;
-    background: $white;
+    // background: $white;
     opacity: 1;
 
     .nav-link {
+      color: $white;
       border-color: transparent;
+
+      &:hover {
+        color: $white !important;
+      }
     }
   }
 }
