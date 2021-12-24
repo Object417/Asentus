@@ -2,22 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 // Variables
-@import "./variables";
+@import "variables";
 
 // Handmade Reset and Normalize CSS
-@import "./common";
+@import "common";
 
-// Elements
-@import "./header_footer";
-@import "./fullscreen-slider";
-@import "./welcome-block";
-@import "./goodbye-block";
-@import "./main";
+@import "header_footer";
+@import "fullscreen-slider";
+@import "welcome_block";
+@import "goodbye_block";
+@import "main";
 
 // Kepp Aspect Ratio for Images
-@import "./keepratio";
+@import "keepratio";
 
 // Media queries
-@import "./media";
-
-@import "./scroll-animations";
+@import "media";

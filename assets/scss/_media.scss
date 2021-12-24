@@ -1,4 +1,4 @@
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 75.0625rem) {
 
   // About Us
   #about {
@@ -48,14 +48,14 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 75rem) {
   .container {
     width: 100%;
     padding: 0 1rem;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 48.0625rem) and (max-width: 75rem) {
 
   // About Us
   #about {
@@ -95,7 +95,7 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 64.0625rem) {
 
   // Pricing
   #pricing {
@@ -103,7 +103,7 @@
       width: calc((100% / 3) - (2rem / 3));
 
       &:hover {
-        padding: 6rem 2rem;
+        padding: 5rem 2rem;
       }
       &:nth-child(2) {
         padding: 6rem 2rem;
@@ -122,7 +122,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 64rem) {
 
   // Pricing
   #pricing {
@@ -137,7 +137,7 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 48.0625rem) and (max-width: 64rem) {
 
   // Showcase
   #showcase {
@@ -147,7 +147,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 48.0625rem) {
 
   // Socials
   #socials {
@@ -165,7 +165,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
 
   // Header menu
   nav {
@@ -236,7 +236,7 @@
   }
 }
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 36.0625rem) and (max-width: 48rem) {
 
   // Provide
   #provide {
@@ -258,7 +258,7 @@
   }
 }
 
-@media screen and (min-width: 577px) {
+@media screen and (min-width: 36.0625rem) {
 
   // Common styles
   .item header {
@@ -293,7 +293,7 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 36rem) {
 
   // Pricing
   #pricing .item {

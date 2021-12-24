@@ -1,7 +1,8 @@
 #goodbye_block {
   position: relative;
   height: calc((100vh - 5rem) - 1px);
-  // z-index: 1;
+  min-height: 25rem;
+  z-index: 3;
 
   .container {
     height: 100%;
