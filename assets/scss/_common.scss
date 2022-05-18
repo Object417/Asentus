@@ -1,9 +1,11 @@
 // Correct size calculation
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-// Smooth scrooling
+// Smooth scrolling
 html {
   scroll-behavior: smooth;
 }
@@ -19,7 +21,12 @@ body {
 }
 
 // Heading styles
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   color: $primary-grey;
   font: $heading-font;
@@ -39,7 +46,8 @@ h3 {
 p {
   margin: 1rem 0;
 }
-b, strong {
+b,
+strong {
   color: $primary-grey;
   font-weight: bold;
 }
@@ -83,7 +91,9 @@ ul.links-list {
 }
 
 // Input forms
-button, input, textarea {
+button,
+input,
+textarea {
   border: none;
   outline: none;
   background: none;
@@ -96,7 +106,7 @@ button[type] {
   cursor: pointer;
 }
 
-// Common clases
+// Common classes
 .container {
   width: 90%;
   max-width: 1400px;
@@ -165,8 +175,8 @@ button[type] {
   transition: 0.3s;
 }
 
-// Scrool offset
-.scrool-offset {
+// Scroll offset
+.scroll-offset {
   position: relative;
   top: -8rem;
 }

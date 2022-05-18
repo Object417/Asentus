@@ -26,6 +26,10 @@ main {
 .description {
   position: relative;
   overflow: hidden;
+
+  &::after {
+    pointer-events: none;
+  }
 }
 
 .img-preview {
@@ -38,7 +42,6 @@ main {
 
 // Section About Us
 #about {
-
   .img-preview {
     background-image: url("../images/about-us.jpg");
     &:hover {
@@ -96,7 +99,6 @@ main {
 // Latest Projects
 #projects {
   .item {
-
     .img-preview:hover ~ .btn-primary {
       border-color: $primary-color;
       color: $white;
@@ -117,7 +119,7 @@ main {
 // Pricing
 #pricing {
   h2 {
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
   }
   .item {
     @extend %animated;
@@ -158,7 +160,7 @@ main {
 // Socials
 #socials {
   h2 {
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
   }
   .img-preview {
     background-image: url("../images/socials/socials-compile.png");
@@ -207,7 +209,10 @@ main {
         @extend %animated;
         content: "";
         position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
       }
       &:nth-child(1) {
         background-image: url("../images/showcase/showcase1.jpg");
@@ -229,7 +234,9 @@ main {
   .img-description {
     @extend %animated;
     position: absolute;
-    right: 0; bottom: 0; left: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 1;
     padding: 0 1rem;
     color: $white;

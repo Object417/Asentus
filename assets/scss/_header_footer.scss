@@ -1,15 +1,16 @@
-#main_header, #main_footer {
+#main_header,
+#main_footer {
   height: 5rem;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%
+    height: 100%;
   }
   h2 {
     @extend %animated;
-    
+
     &::first-letter {
       color: $primary-color;
     }
@@ -20,7 +21,9 @@
 }
 #main_header {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
   border-bottom: 1px solid $primary-grey;
   color: $primary-grey;
@@ -53,7 +56,9 @@ nav {
 
 #main_footer {
   position: absolute;
-  bottom: 0; left: 0; right: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 3;
   border-top: 1px solid $primary-grey;
   color: $white;
