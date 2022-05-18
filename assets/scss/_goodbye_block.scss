@@ -10,7 +10,8 @@
   h2 {
     margin-bottom: 1rem;
   }
-  h2, h3 {
+  h2,
+  h3 {
     color: $white;
   }
   .item {
@@ -28,7 +29,8 @@
   input {
     margin-bottom: 0.5rem;
   }
-  input, textarea {
+  input,
+  textarea {
     width: 100%;
     padding: 0.5rem;
     color: $white;
@@ -38,7 +40,9 @@
       color: $secondary-grey;
     }
   }
-  input, textarea, button {
+  input,
+  textarea,
+  button {
     background-color: #51576980;
   }
   button[type="submit"] {
